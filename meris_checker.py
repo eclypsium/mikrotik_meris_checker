@@ -35,7 +35,7 @@ def credentials_loader():
                    for x in read_file('credentials.txt').split("\n")
                    if len(x.strip()) != 0]
 
-    split_credentials = [x.split(":") for x in credentials]
+    split_credentials = [x.split(":", 1) for x in credentials]
 
     return split_credentials
 
